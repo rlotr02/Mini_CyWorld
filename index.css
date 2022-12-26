@@ -1,0 +1,125 @@
+.borad div {
+  margin: 20px 20px 0 30px;
+}
+
+.borad h3 {
+  font-size: 20px;
+  margin: 0 auto;
+  color: #e25e74;
+}
+
+.borad hr {
+  width: 270px;
+  margin-left: 0;
+  border: 1px solid rgb(197, 193, 193);
+}
+
+.borad p {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.borad span h3 {
+  display: inline;
+  padding: 5px 20px;
+  border: 2px solid rgb(197, 193, 193);
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+}
+
+.borad span hr {
+  margin: 0px;
+  margin-left: 103px;
+  border: 1px solid rgb(197, 193, 193);
+  width: 489px;
+}
+
+.borad table {
+  margin-right: 8px;
+  border-collapse: collapse;
+}
+
+.borad caption {
+  margin: 2px 0;
+  text-align: right;
+  font-size: 13px;
+}
+
+.borad table,
+th,
+td {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+@media (max-width: 1060px) {
+  #boardSection {
+    margin-top: -1px;
+    width: 298px;
+    height: 720px;
+    border-left: 1px solid rgb(100, 99, 99);
+  }
+
+  .boardDashed {
+    width: 275px;
+    height: 696px;
+    margin: 10px 10px;
+    border-left: 2px dashed white;
+  }
+
+  .boardWrap {
+    margin: 8px 8px;
+    width: 258px;
+    height: 678px;
+    border-left: 1px solid rgb(226, 223, 223);
+  }
+
+  .borad {
+    margin: 10px 3px;
+    width: 249px;
+    height: 570px;
+  }
+
+  .borad div {
+    margin: 10px 10px 0 15px;
+  }
+
+  .borad h3 {
+    font-size: 15px;
+  }
+
+  .borad hr {
+    width: 218px;
+  }
+
+  .borad p {
+    font-size: 13px;
+    margin-left: 3px;
+  }
+
+  .borad span h3 {
+    padding: 5px 13px;
+  }
+
+  .borad span hr {
+    margin-top: 2px;
+    margin-left: 73px;
+    width: 145px;
+  }
+
+  .borad table {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .borad caption {
+    font-size: 10px;
+  }
+
+  .borad table,
+  th,
+  td {
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+}

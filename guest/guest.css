@@ -1,0 +1,188 @@
+.borad > div {
+  margin: 30px 20px 0 35px;
+}
+
+.borad h3 {
+  font-size: 20px;
+  margin: 0 auto;
+  color: #e25e74;
+}
+
+.borad hr {
+  width: 580px;
+  margin-left: 0;
+  border: 1px solid rgb(197, 193, 193);
+}
+
+.borad table {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.borad tr {
+  height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.borad tr img {
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 17px;
+}
+
+.borad th {
+  text-align: left;
+}
+
+.borad td {
+  color: rgb(132, 132, 132);
+}
+
+.addwrite {
+  border: none;
+  background: transparent;
+  margin-top: 13px;
+  float: right;
+}
+
+.addwrite:hover {
+  cursor: pointer;
+}
+
+.addwrite img {
+  float: left;
+}
+
+.writeDiv {
+  float: left;
+}
+
+input[type="text"] {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 18px;
+  width: 490px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  margin-top: 9px;
+  margin-left: 8px;
+  width: 17px;
+  height: 16px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("../img/heartfill.svg");
+}
+
+.table {
+  height: 390px;
+  overflow: auto;
+}
+
+.table::-webkit-scrollbar {
+  width: 0px;
+}
+
+.table::-webkit-scrollbar-thumb,
+.table::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (max-width: 1060px) {
+  #boardSection {
+    margin-top: -1px;
+    width: 298px;
+    height: 480px;
+    border-left: 1px solid rgb(100, 99, 99);
+  }
+
+  .boardDashed {
+    width: 275px;
+    height: 456px;
+    margin: 10px 10px;
+    border-left: 2px dashed white;
+  }
+
+  .boardWrap {
+    margin: 8px 8px;
+    width: 258px;
+    height: 437px;
+    border-left: 1px solid rgb(226, 223, 223);
+  }
+
+  .borad {
+    margin: 10px 3px;
+    width: 249px;
+    height: 330px;
+  }
+
+  .borad > div {
+    margin: 13px 10px 0 15px;
+  }
+
+  .borad h3 {
+    font-size: 15px;
+  }
+
+  .borad hr {
+    width: 218px;
+  }
+
+  .borad table {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .borad tr {
+    height: 20px;
+  }
+
+  .borad tr img {
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 10px;
+  }
+
+  input[type="text"] {
+    margin-top: 15px;
+    font-size: 12px;
+    width: 158px;
+  }
+
+  input[type="checkbox"] {
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 10px;
+    height: 9px;
+    background-size: 10px;
+  }
+
+  .addwrite img {
+    width: 15px;
+    margin-top: 3px;
+  }
+
+  .addwrite span {
+    font-size: 10px;
+  }
+
+  .table {
+    height: 230px;
+  }
+}

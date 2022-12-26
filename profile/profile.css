@@ -1,0 +1,76 @@
+.borad > div {
+  margin: 30px 20px 0 35px;
+}
+
+.borad h3 {
+  font-size: 20px;
+  margin: 0 auto;
+  color: #e25e74;
+}
+
+.borad hr {
+  width: 580px;
+  margin-left: 0;
+  border: 1px solid rgb(197, 193, 193);
+}
+
+.borad table {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.borad table tr {
+  height: 35px;
+  font-size: 18px;
+}
+
+@media (max-width: 1060px) {
+  #boardSection {
+    margin-top: -1px;
+    width: 298px;
+    height: 553px;
+    border-left: 1px solid rgb(100, 99, 99);
+  }
+
+  .boardDashed {
+    width: 275px;
+    height: 528px;
+    margin: 10px 10px;
+    border-left: 2px dashed white;
+  }
+
+  .boardWrap {
+    margin: 8px 8px;
+    width: 258px;
+    height: 508px;
+    border-left: 1px solid rgb(226, 223, 223);
+  }
+
+  .borad {
+    margin: 10px 3px;
+    width: 249px;
+    height: 400px;
+  }
+
+  .borad > div {
+    margin: 13px 10px 0 15px;
+  }
+
+  .borad h3 {
+    font-size: 15px;
+  }
+
+  .borad hr {
+    width: 218px;
+  }
+
+  .borad table {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .borad table tr {
+    height: 28px;
+    font-size: 16px;
+  }
+}

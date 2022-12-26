@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가뿡월드</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+    </style>
+    <link rel="shortcut icon" href="../img/logo.ico" />
+    <link rel="stylesheet" href="../main/main.css" />
+    <link rel="stylesheet" href="./photo.css" />
+    <script src="../main/main.js"></script>
+  </head>
+  <body>
+    <img
+      src="../img/quokka.png"
+      alt="quokka"
+      class="quokkaImg"
+      style="position: absolute; width: 25px; top: 11px; left: 110px"
+    />
+    <div>
+      <header>
+        <h2>가뿡월드</h2>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="../index.html"
+                style="font-weight: bold; color: rgb(80, 79, 79)"
+                >메인
+              </a>
+            </li>
+            <li>
+              <a href="../signup/signup.html">일촌맺기</a>
+            </li>
+            <li>
+              <a href="../giftshop/giftshop.html">선물가게</a>
+            </li>
+            <li>
+              <a href="../todolist/todolist.html">To Do List</a>
+            </li>
+          </ul>
+          <span class="navHistory">가뿡월드에 오신 걸 환영해요</span>
+          <button class="navLogin" type="button">로그인</button>
+        </nav>
+      </header>
+      <div class="center">
+        <main>
+          <section id="profileSection" class="backgroundSection">
+            <div class="profileDashed">
+              <div class="profileWrap">
+                <div class="todayDate">TODAY <span class="date"></span></div>
+                <div class="profile">
+                  <div>
+                    <em>TODAY IS...</em> <span class="heartColor">💗</span
+                    ><span>앙큼</span>
+                  </div>
+                  <img src="../img/profile.jpg" alt="프로필" width="200px" />
+                  <hr />
+                  <p>
+                    👩🏻‍💻 이가은<br />
+                    🎉 2002.03.14<br />
+                    🎓 명지대학교 컴퓨터공학과<br />
+                    📱 010-9092-7926<br />
+                    ✉️ 0314kelee@naver.com<br />
+                  </p>
+                  <hr />
+                  <label for="todayColor">오늘의 색상</label>
+                  <select
+                    name="todayColor"
+                    id="todayColor"
+                    onchange="changeColor(this)"
+                  >
+                    <option
+                      value="#FF7878"
+                      data-color1="#EB5050"
+                      data-color2="#CD4646"
+                      data-color3="#B93232"
+                      data-color4="❤️"
+                    >
+                      ❤️빨간색
+                    </option>
+                    <option
+                      value="#FFAA28"
+                      data-color1="#FF9614"
+                      data-color2="#FF8200"
+                      data-color3="#D27328"
+                      data-color4="🧡"
+                    >
+                      🧡주황색
+                    </option>
+                    <option
+                      value="#FFCD28"
+                      data-color1="#FFB914"
+                      data-color2="#FFA500"
+                      data-color3="#FF9100"
+                      data-color4="💛"
+                    >
+                      💛노란색
+                    </option>
+                    <option
+                      value="#65C28E"
+                      data-color1="#4CA975"
+                      data-color2="#389561"
+                      data-color3="#2E8B57"
+                      data-color4="💚"
+                    >
+                      💚초록색
+                    </option>
+                    <option
+                      value="#91B9F5"
+                      data-color1="#739BE1"
+                      data-color2="#557DE1"
+                      data-color3="#4169E1"
+                      data-color4="💙"
+                    >
+                      💙파란색
+                    </option>
+                    <option
+                      value="#ccccff"
+                      data-color1="#A0A0FF"
+                      data-color2="#8C8CFF"
+                      data-color3="#7878FF"
+                      data-color4="💜"
+                    >
+                      💜보라색
+                    </option>
+                    <option
+                      value="#ffb7c3"
+                      selected
+                      data-color1="#ea99a6"
+                      data-color2="#db79a5"
+                      data-color3="#b66288"
+                      data-color4="💗"
+                    >
+                      💗분홍색
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="boardSection" class="backgroundSection">
+            <div class="boardDashed">
+              <div class="boardWrap">
+                <div class="title">
+                  <h1>가뿡이의 미니월드</h1>
+                  <ul>
+                    <li>
+                      <a href="../signup/signup.html">
+                        <span>◆</span>
+                        일촌맺기
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../giftshop/giftshop.html">
+                        <span>◆</span>
+                        선물가게
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="borad">
+                  <div>
+                    <h3>가뿡이의 비밀 사진첩</h3>
+                    <hr />
+                    <div class="Container">
+                      <div class="gridContainer">
+                        <div>
+                          <img src="../img/photo/1.jpg" alt="1" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/2.jpg" alt="2" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/3.jpg" alt="3" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/4.jpg" alt="4" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/5.jpg" alt="5" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/6.jpg" alt="6" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/7.jpg" alt="7" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/8.jpg" alt="8" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/9.jpg" alt="9" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/10.jpg" alt="10" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/11.jpg" alt="11" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/12.jpg" alt="12" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/13.jpg" alt="13" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/14.jpg" alt="14" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/15.jpg" alt="15" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/16.jpg" alt="16" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/17.jpg" alt="17" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/18.jpg" alt="18" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/19.jpg" alt="19" />
+                        </div>
+                        <div>
+                          <img src="../img/photo/20.jpg" alt="20" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menus">
+                <div class="menu" onclick="location.href='../index.html'">
+                  홈
+                </div>
+                <div
+                  class="menu"
+                  onclick="location.href='../profile/profile.html'"
+                >
+                  프로필
+                </div>
+                <div
+                  class="menu"
+                  onclick="location.href='../schedule/schedule.html'"
+                >
+                  시간표
+                </div>
+                <div class="clickMenu" onclick="location.href='./photo.html'">
+                  사진첩
+                </div>
+                <div class="menu" onclick="location.href='../board/board.html'">
+                  게시판
+                </div>
+                <div class="menu" onclick="location.href='../guest/guest.html'">
+                  방명록
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <aside>
+          <input
+            type="button"
+            value="가뿡월드 홈"
+            onclick="location.href='../index.html'"
+          />
+          <div>
+            <label for="청순">청순</label>
+            <progress id="청순" class="progress" value="50" min="0" max="100">
+              50%
+            </progress>
+            <br />
+            <label for="앙큼">앙큼</label>
+            <progress id="앙큼" class="progress" value="90" min="0" max="100">
+              90%
+            </progress>
+            <br />
+            <label for="큐티">큐티</label>
+            <progress id="큐티" class="progress" value="70" min="0" max="100">
+              70%
+            </progress>
+            <br />
+            <label for="섹시">섹시</label>
+            <progress id="섹시" class="progress" value="30" min="0" max="100">
+              30%
+            </progress>
+            <br />
+            <hr />
+            <table>
+              <colgroup span="2" style="width: 120px"></colgroup>
+              <tbody>
+                <tr>
+                  <td>팬 <span>99999</span></td>
+                  <td>즐겨찾기 <span>120</span></td>
+                </tr>
+                <tr>
+                  <td>댓글 <span>130</span></td>
+                  <td>스크랩 <span>350</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">소망상자 · 마이앱스 <span>57</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </aside>
+      </div>
+      <footer>
+        <ul>
+          <li>
+            <a href="https://github.com/rlotr02" target="_blank">
+              <img src="../img/github.png" alt="github" width="30px" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/rlo._.tr" target="_blank">
+              <img src="../img/instagram.png" alt="instagram" width="30px" />
+            </a>
+          </li>
+          <li>
+            <button class="scrollBtn" onclick="ScrollUp()">
+              <img src="../img/up.png" alt="up" width="30px" />
+            </button>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

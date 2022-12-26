@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이가은/60212208/웹프로그래밍 과제 #3</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+    </style>
+    <link rel="shortcut icon" href="../img/logo.ico" />
+    <link rel="stylesheet" href="./signup.css" />
+    <script src="./signup.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>가뿡월드</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">메인 </a>
+          </li>
+          <li>
+            <a
+              href="./signup.html"
+              style="font-weight: bold; color: rgb(80, 79, 79)"
+              >일촌맺기
+            </a>
+          </li>
+          <li>
+            <a href="../giftshop/giftshop.html">선물가게</a>
+          </li>
+          <li>
+            <a href="../todolist/todolist.html">To Do List</a>
+          </li>
+        </ul>
+        <span class="navHistory">가뿡월드에 오신 걸 환영해요</span>
+        <button class="navLogin" type="button">로그인</button>
+      </nav>
+    </header>
+    <main>
+      <section class="prevSection">
+        <input
+          type="button"
+          value="<"
+          onclick="location.href='../index.html'"
+        />
+        <h3>일촌맺기&팬되기 신청</h3>
+      </section>
+      <div class="colorDiv">
+        <div class="dashDiv">
+          <div class="wrapDiv">
+            <section class="nameSection">
+              <p>보내는이: <span>뿡뿡1호</span></p>
+              <hr />
+              <div class="flexDiv">
+                <img src="../img/profile.jpg" alt="프로필사진" />
+                <span id="output">
+                  <strong>가뿡이</strong>님께 일촌맺기를 신청합니다</span
+                >
+              </div>
+              <hr />
+            </section>
+            <section class="formSection">
+              <form>
+                <fieldset>
+                  <legend>신청 전 골라주세요!</legend>
+                  <p>일촌맺기와 팬되기 중 어떤 걸 원하시나요?</p>
+                  <label
+                    ><input
+                      type="radio"
+                      name="choice"
+                      value="일촌맺기"
+                      checked
+                    />일촌맺기</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="choice"
+                      value="팬되기"
+                    />팬되기</label
+                  >
+                </fieldset>
+                <br />
+                <fieldset>
+                  <legend>신청하기 위한 기본 정보를 알려주세요!</legend>
+                  <p>
+                    <label for="text">이름 : </label>
+                    <input type="text" id="text" />
+                  </p>
+                  <p>
+                    성별 :
+                    <label
+                      ><input
+                        type="radio"
+                        name="gender"
+                        value="woman"
+                        checked
+                      />여성</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="gender"
+                        value="man"
+                      />남성</label
+                    >
+                  </p>
+                  <p>
+                    <label for="date">생년월일 : </label>
+                    <input type="date" id="date" />
+                  </p>
+                  <p>
+                    <label for="city">지역 : </label>
+                    <select name="city" id="city">
+                      <option value="서울" selected>서울</option>
+                      <option value="경기">경기</option>
+                      <option value="인천">인천</option>
+                      <option value="대구">대구</option>
+                      <option value="부산">부산</option>
+                    </select>
+                    &nbsp;<span id="textCity">저도 서울에 살아요!</span>
+                  </p>
+                  <p>
+                    <label for="tel">전화번호 : </label>
+                    <input type="tel" id="tel" />
+                  </p>
+                  <p>
+                    <label for="email">이메일 : </label>
+                    <input type="email" id="email" />
+                  </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                  <legend>
+                    뿡뿡1호님이 궁금해요! 뿡뿡1호님에 대해 알려주세요!
+                  </legend>
+                  <div>
+                    <p>좋아하는 음식을 알려주세요</p>
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="food"
+                        value="tteokbokki"
+                      />떡볶이</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="food"
+                        value="chicken"
+                      />치킨</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="food"
+                        value="pizza"
+                      />피자</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="food"
+                        value="hamburger"
+                      />햄버거</label
+                    >
+                  </div>
+                  <div>
+                    <p>좋아하는 색상을 골라주세요</p>
+                    <label><input type="color" /></label>
+                  </div>
+                  <div>
+                    <p>당신의 얼굴이 궁금해요! 사진을 첨부해주세요~</p>
+                    <label><input type="file" /></label>
+                  </div>
+                  <div>
+                    <p>당신의 키가 궁금해요!</p>
+                    <input type="text" class="cmHeight" />
+                    <span>&nbsp;cm &nbsp;&nbsp;= &nbsp;</span>
+                    <span class="textHeight"></span>
+                    <select name="heights" class="heights">
+                      <option value="10">mm</option>
+                      <option value="0.01">m</option>
+                      <option value="0.393701">inch</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p>숨을 몇 초 참을 수 있나요!</p>
+                    <input type="checkbox" class="time" />
+                    <span>체크박스를 눌러 시간을 계산해보세요 &nbsp;</span>
+                    <strong class="timer"></strong>
+                  </div>
+                </fieldset>
+                <br />
+                <fieldset>
+                  <legend>To. 가뿡</legend>
+                  <div>
+                    <p>저를 좋아하는 만큼, 사랑하는 만큼 표시해주세요!</p>
+                    <label>
+                      <input
+                        type="range"
+                        name="love"
+                        min="1"
+                        max="100"
+                        onchange="result.value=this.value"
+                      /><output name="result" for="range">50</output>
+                    </label>
+                  </div>
+                  <div>
+                    <p>가뿡이에게 하고 싶은 말이 있다면 해주세요!</p>
+                    <label for="letter">
+                      <textarea id="letter" name="letter"></textarea>
+                      <h1 class="countText"></h1>
+                    </label>
+                  </div>
+                </fieldset>
+                <br />
+                <div class="buttonDiv">
+                  <input
+                    type="submit"
+                    value="등록"
+                    class="button"
+                    id="submit"
+                  />
+                  <input type="reset" value="취소" class="button" />
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://github.com/rlotr02" target="_blank">
+            <img src="../img/github.png" alt="github" width="30px" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/rlo._.tr" target="_blank">
+            <img src="../img/instagram.png" alt="instagram" width="30px" />
+          </a>
+        </li>
+        <li>
+          <button class="scrollBtn" onclick="ScrollUp()">
+            <img src="../img/up.png" alt="up" width="30px" />
+          </button>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

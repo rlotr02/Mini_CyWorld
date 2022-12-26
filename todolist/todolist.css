@@ -1,0 +1,560 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Poor Story", cursive;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(80, 79, 79);
+  background-color: #949397;
+  background-image: linear-gradient(
+      0deg,
+      transparent 16px,
+      rgb(255, 255, 255, 0.4) 17px
+    ),
+    linear-gradient(90deg, transparent 16px, rgb(255, 255, 255, 0.4) 17px);
+  background-size: 17px 17px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffb7c3;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+button,
+input,
+select {
+  font-family: "Poor Story", cursive;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(80, 79, 79);
+}
+
+button:hover,
+input:hover,
+a:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+::placeholder {
+  color: rgb(189, 192, 195);
+}
+
+:-ms-input-placeholder {
+  color: rgb(189, 192, 195);
+}
+
+::-ms-input-placeholder {
+  color: rgb(189, 192, 195);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fefefe;
+  padding: 0 10px 0 25px;
+}
+
+header h2,
+a {
+  margin: 0;
+  color: #ec8999;
+}
+
+nav ul {
+  display: inline;
+}
+
+nav li {
+  display: inline;
+  border-left: 1px solid #d7d3d3;
+  padding: 0px 8px 0px 8px;
+}
+
+nav li:first-child {
+  border-left: none;
+}
+
+nav a {
+  color: rgb(140, 138, 138);
+}
+
+nav a:hover {
+  color: rgb(80, 79, 79);
+}
+
+nav span {
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  font-size: 15px;
+  color: rgb(140, 138, 138);
+  padding: 2px 7px 2px 7px;
+}
+
+nav button {
+  border: 1px solid rgb(184, 183, 183);
+  background-color: transparent;
+}
+
+main {
+  margin: 0 35%;
+}
+
+.prevSection {
+  margin: 10px;
+}
+
+.prevSection input {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgb(161, 157, 157);
+  background-color: #f1e9e9;
+  color: rgb(161, 157, 157);
+  font-weight: bold;
+}
+
+.prevSection h3 {
+  color: #f1e9e9;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.colorDiv {
+  border: 2px solid rgb(161, 157, 157);
+  border-radius: 15px;
+  background-color: #ffb7c3;
+}
+
+.dashDiv {
+  margin: 12px;
+  border: 2px dashed white;
+  border-radius: 14px;
+}
+
+.wrapDiv {
+  position: relative;
+  margin: 7px;
+  border: 1px solid rgb(226, 223, 223);
+  border-radius: 13px;
+  background-color: #f2eeee;
+}
+
+.todoSection {
+  margin: 30px;
+}
+
+.todayDate {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.todayWeek {
+  margin-top: 16px;
+  font-size: 20px;
+  color: #8d9194;
+}
+
+hr {
+  margin: 20px -1px;
+  border: 1px solid rgb(213, 210, 210);
+}
+
+.todolist {
+  height: 510px;
+  overflow: auto;
+}
+
+.todolist::-webkit-scrollbar {
+  width: 0px;
+}
+
+.todolist::-webkit-scrollbar-thumb,
+.todolist::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.todolist div {
+  margin-top: 18px;
+}
+
+input[type="checkbox"] {
+  float: left;
+  appearance: none;
+  border-radius: 100%;
+  width: 33px;
+  height: 33px;
+  border: 2px solid #f2b6bb;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+div > span {
+  margin: 0px 10px;
+  align-items: center;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+div > button {
+  float: right;
+  margin: 8px 10px;
+  border: none;
+  background-image: url("../img/trash.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+
+.todoDiv {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  border-radius: 0 0 13px 13px;
+  background-color: rgb(239, 218, 218);
+}
+
+input[type="text"] {
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 20px;
+  width: 400px;
+}
+
+.addBtn {
+  position: relative;
+  display: flex;
+  border: none;
+  border-radius: 100%;
+  background-color: #e28a91;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  margin: auto;
+  margin-top: -35px;
+  z-index: 1000;
+}
+
+.addBtn img {
+  width: 30px;
+}
+
+@media (max-width: 1900px) {
+  main {
+    margin: 0 30%;
+  }
+}
+
+@media (max-width: 1440px) {
+  main {
+    margin: 0 25%;
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    margin: 0 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 0 10%;
+  }
+}
+
+@media (max-width: 650px) {
+  nav span {
+    display: none;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  main {
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .prevSection input {
+    width: 20px;
+    height: 20px;
+  }
+
+  button,
+  input,
+  select {
+    font-size: 10px;
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 550px) {
+  input[type="text"] {
+    font-size: 18px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    margin: 0 3%;
+  }
+}
+
+@media (max-width: 400px) {
+  input[type="text"] {
+    font-size: 16px;
+    width: 250px;
+  }
+
+  .todayDate {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  div > span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 11px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+    width: 200px;
+  }
+
+  .todolist div {
+    margin-top: 10px;
+  }
+
+  .todoSection {
+    margin: 20px;
+  }
+
+  .todayDate {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .todayWeek {
+    font-size: 18px;
+  }
+
+  input[type="checkbox"] {
+    width: 28px;
+    height: 28px;
+  }
+
+  input[type="checkbox"]:checked {
+    background-size: 12px;
+  }
+
+  div > span {
+    margin: 0px 3px;
+  }
+
+  div > button {
+    margin: 5px;
+    background-size: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 290px) {
+  .todayDate {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .todayWeek {
+    font-size: 16px;
+  }
+
+  .todoSection {
+    margin: 15px;
+  }
+}
+
+@media (max-height: 1400px) {
+  .todoSection {
+    height: 1000px;
+  }
+
+  .todolist {
+    height: 880px;
+  }
+}
+
+@media (max-height: 1200px) {
+  .todoSection {
+    height: 840px;
+  }
+
+  .todolist {
+    height: 720px;
+  }
+}
+
+@media (max-height: 1100px) {
+  .todoSection {
+    height: 700px;
+  }
+
+  .todolist {
+    height: 580px;
+  }
+}
+
+@media (max-height: 1000px) {
+  .todoSection {
+    height: 650px;
+  }
+
+  .todolist {
+    height: 530px;
+  }
+}
+
+@media (max-height: 900px) {
+  .todoSection {
+    height: 600px;
+  }
+
+  .todolist {
+    height: 480px;
+  }
+
+  .todoDiv {
+    height: 100px;
+  }
+
+  input[type="text"] {
+    margin-top: 30px;
+  }
+}
+
+@media (max-height: 855px) {
+  .todoSection {
+    height: 550px;
+  }
+
+  .todolist {
+    height: 430px;
+  }
+}
+
+@media (max-height: 800px) {
+  .todoSection {
+    height: 480px;
+  }
+
+  .todolist {
+    height: 360px;
+  }
+
+  .todoDiv {
+    height: 80px;
+  }
+
+  input[type="text"] {
+    margin-top: 20px;
+  }
+}
+
+@media (max-height: 720px) {
+  .todoSection {
+    height: 430px;
+  }
+
+  .todolist {
+    height: 310px;
+  }
+}
+
+@media (max-height: 680px) {
+  .todoSection {
+    height: 400px;
+  }
+
+  .todolist {
+    height: 280px;
+  }
+}
+
+@media (max-height: 600px) {
+  .todoSection {
+    height: 300px;
+  }
+
+  .todolist {
+    height: 180px;
+  }
+
+  .todoDiv {
+    height: 60px;
+  }
+
+  input[type="text"] {
+    margin-top: 15px;
+  }
+}

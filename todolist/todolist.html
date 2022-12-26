@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이가은/60212208/웹프로그래밍 과제 #3</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+    </style>
+    <link rel="shortcut icon" href="../img/logo.ico" />
+    <link rel="stylesheet" href="./todolist.css" />
+    <script src="./todolist.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>가뿡월드</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">메인 </a>
+          </li>
+          <li>
+            <a href="../signup/signup.html">일촌맺기</a>
+          </li>
+          <li>
+            <a href="../giftshop/giftshop.html">선물가게</a>
+          </li>
+          <li>
+            <a
+              href="../todolist/todolist.html"
+              style="font-weight: bold; color: rgb(80, 79, 79)"
+              >To Do List
+            </a>
+          </li>
+        </ul>
+        <span class="navHistory">가뿡월드에 오신 걸 환영해요</span>
+        <button class="navLogin" type="button">로그인</button>
+      </nav>
+    </header>
+    <main>
+      <section class="prevSection">
+        <input
+          type="button"
+          value="<"
+          onclick="location.href='../index.html'"
+        />
+        <h3>가뿡이의 To Do List</h3>
+      </section>
+      <div class="colorDiv">
+        <div class="dashDiv">
+          <div class="wrapDiv">
+            <section class="todoSection">
+              <div class="todayDate"></div>
+              <div class="todayWeek"></div>
+              <hr />
+              <div class="todolist"></div>
+            </section>
+            <div class="todoDiv" style="display: none">
+              <input
+                class="todoCreate"
+                type="text"
+                placeholder="할 일을 입력한 후, Enter를 누르세요"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="addBtn"><img src="../img/plus.svg" alt="plus" /></button>
+    </main>
+  </body>
+</html>

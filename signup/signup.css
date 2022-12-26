@@ -1,0 +1,393 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poor Story", cursive;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(80, 79, 79);
+  background-color: #949397;
+  background-image: linear-gradient(
+      0deg,
+      transparent 16px,
+      rgb(255, 255, 255, 0.4) 17px
+    ),
+    linear-gradient(90deg, transparent 16px, rgb(255, 255, 255, 0.4) 17px);
+  background-size: 17px 17px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffb7c3;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+button,
+input,
+select {
+  font-family: "Poor Story", cursive;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(80, 79, 79);
+}
+
+button:hover,
+input:hover,
+a:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fefefe;
+  padding: 0 10px 0 25px;
+}
+
+header h2,
+a {
+  margin: 0;
+  color: #ec8999;
+}
+
+nav ul {
+  display: inline;
+}
+
+nav li {
+  display: inline;
+  border-left: 1px solid #d7d3d3;
+  padding: 0px 8px 0px 8px;
+}
+
+nav li:first-child {
+  border-left: none;
+}
+
+nav a {
+  color: rgb(140, 138, 138);
+}
+
+nav a:hover {
+  color: rgb(80, 79, 79);
+}
+
+nav span {
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  font-size: 15px;
+  color: rgb(140, 138, 138);
+  padding: 2px 7px 2px 7px;
+}
+
+nav button {
+  border: 1px solid rgb(184, 183, 183);
+  background-color: transparent;
+}
+
+hr {
+  border: 1px dashed rgb(197, 193, 193);
+}
+
+main {
+  margin: 0 20% 0 20%;
+}
+
+.prevSection {
+  margin: 1%;
+}
+
+.prevSection input {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgb(161, 157, 157);
+  background-color: #f1e9e9;
+  color: rgb(161, 157, 157);
+  font-weight: bold;
+}
+
+.prevSection h3 {
+  color: #f1e9e9;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.colorDiv {
+  border: 2px solid rgb(161, 157, 157);
+  border-radius: 15px;
+  background-color: #ffb7c3;
+}
+
+.dashDiv {
+  margin: 2%;
+  border: 2px dashed white;
+  border-radius: 14px;
+}
+
+.wrapDiv {
+  margin: 1%;
+  border: 1px solid rgb(226, 223, 223);
+  border-radius: 13px;
+  background-color: #f2eeee;
+}
+
+.nameSection {
+  margin: 5%;
+}
+
+.nameSection p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.flexDiv {
+  display: flex;
+}
+
+.flexDiv img {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  margin: 2%;
+}
+
+.flexDiv span {
+  margin: 16% 0 0 10%;
+  font-size: 22px;
+}
+
+.formSection {
+  margin: 0 10% 0 10%;
+}
+
+fieldset {
+  margin: 2%;
+  background-color: #ffd6d6;
+  border: 2px solid rgb(151, 95, 95);
+  border-radius: 10px;
+  padding: 0 40px 30px 40px;
+}
+
+legend {
+  color: rgb(151, 95, 95);
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+colorDiv input,
+select {
+  margin-left: 2%;
+}
+
+.buttonDiv {
+  margin: 0 0 4% 83%;
+}
+
+.button {
+  padding: 4% 5%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid rgb(151, 95, 95);
+  background-color: #ebb8b8;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
+footer li {
+  float: left;
+  margin-right: 20px;
+}
+
+footer img {
+  width: 30px;
+}
+
+.scrollBtn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 1400px) {
+  main {
+    margin: 0 15% 0 15%;
+  }
+
+  .buttonDiv {
+    margin: 0 0 4% 82%;
+  }
+}
+
+@media (max-width: 1240px) {
+  main {
+    margin: 0 10% 0 10%;
+  }
+
+  .buttonDiv {
+    margin: 0 0 4% 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin: 0 5% 0 5%;
+  }
+
+  .buttonDiv {
+    margin: 0 0 4% 80%;
+  }
+}
+
+@media (max-width: 834px) {
+  main {
+    margin: 0 1% 0 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .flexDiv span {
+    margin: 16% 0 0 6%;
+    font-size: 16px;
+  }
+
+  legend {
+    font-size: 17px;
+  }
+
+  .buttonDiv {
+    margin: 0 0 4% 78%;
+  }
+
+  .button {
+    padding: 3% 5%;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 713px) {
+  .flexDiv span {
+    margin: 16% 0 0 5%;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 650px) {
+  nav span {
+    display: none;
+  }
+
+  nav button {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .prevSection input {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nameSection p {
+    font-size: 13px;
+  }
+
+  .flexDiv img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin: 2%;
+  }
+
+  .flexDiv span {
+    margin: 16% 0 0 3%;
+    font-size: 11px;
+  }
+
+  .formSection {
+    margin: 0 5% 0 5%;
+  }
+
+  legend {
+    font-size: 13px;
+  }
+
+  .buttonDiv {
+    margin: 0 0 4% 79%;
+  }
+
+  .button {
+    padding: 2% 4%;
+    font-size: 12px;
+  }
+
+  button,
+  input,
+  select {
+    font-size: 10px;
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 340px) {
+  main {
+    margin: 0 3%;
+  }
+
+  body {
+    font-size: 10px;
+  }
+}

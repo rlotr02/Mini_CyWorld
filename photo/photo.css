@@ -1,0 +1,89 @@
+.borad > div {
+  margin: 30px 20px 0 35px;
+}
+
+.borad h3 {
+  font-size: 20px;
+  margin: 0 auto;
+  color: #e25e74;
+}
+
+.borad hr {
+  width: 580px;
+  margin-left: 0;
+  border: 1px solid rgb(197, 193, 193);
+  margin-bottom: 20px;
+}
+
+.Container {
+  height: 430px;
+  width: 100%;
+  overflow: auto;
+}
+
+.Container::-webkit-scrollbar {
+  width: 13px;
+}
+
+.Container::-webkit-scrollbar-thumb,
+.Container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-gap: 16px;
+}
+
+.gridContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media (max-width: 1060px) {
+  #boardSection {
+    margin-top: -1px;
+    width: 298px;
+    height: 523px;
+    border-left: 1px solid rgb(100, 99, 99);
+  }
+
+  .boardDashed {
+    width: 275px;
+    height: 498px;
+    margin: 10px 10px;
+    border-left: 2px dashed white;
+  }
+
+  .boardWrap {
+    margin: 8px 8px;
+    width: 258px;
+    height: 478px;
+    border-left: 1px solid rgb(226, 223, 223);
+  }
+
+  .borad {
+    margin: 10px 3px;
+    width: 249px;
+    height: 370px;
+  }
+
+  .borad > div {
+    margin: 13px 10px 0 15px;
+  }
+
+  .borad h3 {
+    font-size: 15px;
+  }
+
+  .borad hr {
+    width: 218px;
+  }
+
+  .Container {
+    height: 300px;
+    margin-left: 3px;
+  }
+}
