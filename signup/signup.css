@@ -201,11 +201,11 @@ select {
 }
 
 .buttonDiv {
-  margin: 0 0 4% 83%;
+  float: right;
+  margin-right: 3%;
 }
 
 .button {
-  padding: 4% 5%;
   font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
@@ -238,29 +238,17 @@ footer img {
   main {
     margin: 0 15% 0 15%;
   }
-
-  .buttonDiv {
-    margin: 0 0 4% 82%;
-  }
 }
 
 @media (max-width: 1240px) {
   main {
     margin: 0 10% 0 10%;
   }
-
-  .buttonDiv {
-    margin: 0 0 4% 80%;
-  }
 }
 
 @media (max-width: 1024px) {
   main {
     margin: 0 5% 0 5%;
-  }
-
-  .buttonDiv {
-    margin: 0 0 4% 80%;
   }
 }
 
@@ -284,12 +272,7 @@ footer img {
     font-size: 17px;
   }
 
-  .buttonDiv {
-    margin: 0 0 4% 78%;
-  }
-
   .button {
-    padding: 3% 5%;
     font-size: 17px;
   }
 }
@@ -341,13 +324,9 @@ footer img {
     font-size: 13px;
   }
 
-  .buttonDiv {
-    margin: 0 0 4% 79%;
-  }
-
   .button {
-    padding: 2% 4%;
     font-size: 12px;
+    margin-left: 0;
   }
 
   button,
@@ -382,12 +361,18 @@ footer img {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 350px) {
   main {
     margin: 0 3%;
   }
 
   body {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  main {
+    margin: 0 1%;
   }
 }
