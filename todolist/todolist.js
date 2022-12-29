@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     text.textContent = input.value;
 
-    button.innerHTML = "&nbsp";
+    button.innerHTML = "<img src='../img/trash.svg'>&nbsp;";
     button.addEventListener("click", () => {
       removeTodo(key);
     });
