@@ -31,7 +31,8 @@ body::-webkit-scrollbar-track {
 
 button,
 input,
-select {
+select,
+label {
   font-family: "Poor Story", cursive;
   font-size: 14px;
   font-weight: 400;
@@ -329,11 +330,20 @@ footer img {
     margin-left: 0;
   }
 
+  fieldset {
+    margin: 1%;
+    padding: 10px 30px 30px 30px;
+  }
+
+  fieldset p {
+    font-size: 12px;
+  }
+
   button,
   input,
-  select {
-    font-size: 10px;
-    margin-left: 2%;
+  select,
+  label {
+    font-size: 12px;
   }
 }
 
@@ -341,33 +351,81 @@ footer img {
   body {
     font-size: 13px;
   }
+
+  fieldset {
+    margin: 1%;
+    padding: 10px 20px 30px 20px;
+  }
+
+  fieldset p {
+    font-size: 11px;
+  }
+
+  button,
+  input,
+  select,
+  label {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 425px) {
   main {
     margin: 0 5%;
   }
+
+  fieldset {
+    margin: 0;
+    padding: 10px 10px 20px 10px;
+  }
 }
 
 @media (max-width: 375px) {
+  main {
+    margin: 0 3%;
+  }
+
   body {
     font-size: 12px;
+  }
+
+  legend {
+    font-size: 12px;
+  }
+
+  fieldset p {
+    font-size: 10px;
+  }
+
+  button,
+  input,
+  select,
+  label {
+    font-size: 10px;
+  }
+
+  input[type="checkbox"] {
+    width: 10px;
   }
 }
 
 @media (max-width: 360px) {
+  main {
+    margin: 0 2%;
+  }
+
   body {
+    font-size: 10px;
+  }
+
+  legend {
     font-size: 11px;
   }
 }
 
 @media (max-width: 350px) {
   main {
-    margin: 0 3%;
-  }
-
-  body {
-    font-size: 10px;
+    margin: 0 2%;
   }
 }
 
