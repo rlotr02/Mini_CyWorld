@@ -73,9 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
   checkbox.addEventListener("change", (event) => {
     if (event.currentTarget.checked) {
       timerId = setInterval(() => {
-        timer += 0.1;
+        timer += 1;
         time.textContent = `${timer}초`;
-      }, 100);
+      }, 1000);
     } else {
       clearInterval(timerId);
     }
