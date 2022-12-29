@@ -228,10 +228,6 @@ div > button {
   float: right;
   margin: 8px 10px;
   border: none;
-  background-image: url("../img/trash.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 15px;
 }
 
 .todoDiv {
@@ -410,7 +406,6 @@ input[type="text"] {
 
   div > button {
     margin: 8px;
-    background-size: 10px;
   }
 }
 
