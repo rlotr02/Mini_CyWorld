@@ -1,2 +1,3 @@
 User-agent: *
 Allow:/
+Sitemap: https://mini-cyworld.netlify.app/sitemap.xml
